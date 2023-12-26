@@ -1,11 +1,11 @@
 #SingleInstance Force
 #Requires AutoHotkey >=2.0- <2.1 64-bit
 
-TraySetIcon(A_WorkingDir . "\fucksb.ico")
-global Name := "" ;被骂的名字
-global Custom_Index := 1 ;自定义骂人库索引
+TraySetIcon(A_WorkingDir . "\英雄联盟亲人保护器.ico")
+global Name := "" ;互动对象
+global Custom_Index := 1 ;自定义保护库索引
 
-; 读取骂人库，自定义骂人库内容，转换为字符串数组
+; 读取保护库，自定义保护库内容，转换为字符串数组
 txt := FileRead(A_WorkingDir . "\Data\Data.txt","UTF-8")
 txtArray := StrSplit(txt,"`n","`r")
 custom_txt := FileRead(A_WorkingDir . "\Data\Custom.txt","UTF-8")
@@ -17,7 +17,7 @@ F12::{
 }
 
 ; ---------------------------------------------------
-; 游戏对战界面骂人代码
+; 游戏对战界面保护代码
 ; ---------------------------------------------------
 #HotIf WinActive("ahk_exe League of Legends.exe")
 ; #HotIf WinActive("ahk_exe EverEdit.exe") ;测试
@@ -59,7 +59,7 @@ F3::{
     }
 }
 
-; 获取被骂人姓名
+; 获取被保护姓名
 F5::{
     global
     input_obj := InputBox("请输入您要骂的人的名字","名字")
@@ -70,7 +70,7 @@ F5::{
 
 
 ; ---------------------------------------------------
-; 游戏结算界面骂人代码
+; 游戏结算界面保护代码
 ; ---------------------------------------------------
 #HotIf WinActive("ahk_exe LeagueClientUx.exe")
 ; 随机发送Data.txt库中的内容
@@ -107,7 +107,7 @@ F3::{
     }
 }
 
-; 获取被骂人姓名
+; 获取被保护姓名
 F5::{
     global
     input_obj := InputBox("请输入您要骂的人的名字","名字")
