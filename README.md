@@ -11,7 +11,7 @@
 4. 使用对应快捷键功能
 
 ## 文件说明
-* Data.txt（随机骂人库）用于F2按键按顺序发送
+* Data.txt（随机骂人库）用于F2按键随机发送
 * Custom.txt（顺序骂人库）用于F3按键按顺序发送
 * Default.txt （默认骂人库）Data.txt/Custom.txt改坏了就复制 Default.txt一份并修改为名称为对应名称
 * FuckSB.ahk（主脚本）如果懂AutoHotKey可以自行修改脚本
